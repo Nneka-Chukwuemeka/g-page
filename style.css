@@ -1,0 +1,149 @@
+body, p {
+    margin: 0;
+    padding: 0;
+    max-height: auto;
+}
+img {
+    max-width: 100%;
+}
+
+/* Navigation styling */
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: auto;
+    padding: 1em;
+}
+.mobile {
+    display: none;
+}
+ a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav img {
+    height: 20px;
+}
+/* main styling */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+input {
+    width:  100%;
+    padding: 1em 2em;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+}
+.btns-container{
+    margin-top: 1em;
+}
+.btns-container button {
+    padding: 1em;
+    border: none;
+}
+
+main label  {
+    width: 52%;
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+label #search {
+    width: 2%;
+    display: inline-block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+label #microphone {
+    width: 2%;
+    display: inline-block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+main .offers {
+    margin: 2em auto;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+.lang {
+    display: flex;
+    padding-left: .4em;
+}
+.lang a {
+    margin-right: .5em;
+    color: rgb(45, 45, 102);
+}
+/* Footer Styling */
+footer {
+    background-color: rgb(240, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 6.5em;
+}
+.footer-top {
+    padding: 1em;  
+}
+.footer-bottom {
+    padding:1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: .3px solid gray;
+}
+.left a {
+    margin-right: 1em;
+}
+.left a {
+    margin-right: 1em;
+}
+@media screen and (max-width:767px) {
+    nav {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .left-nav a {
+        margin-left: 1em;
+    }
+    .right-nav img {
+        margin-right: 2em;
+    }
+    main label {
+        width: 60%;
+    }
+    .btns-container {
+        display: none;
+    }
+    .offers {
+        flex-direction: column;
+    }
+    .lang {
+        padding-left: 0;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .left #remove {
+        display: none;
+    }
+    .footer-bottom #mid {
+        display: none;
+    }
+}
